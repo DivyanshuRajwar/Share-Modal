@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div class="main">
+        <div id="ball_1" class="ball"></div>
+        <div class="card">
+            <img src="Screenshot 2023-11-07 082519.png" alt="nhi hai photo">
+            <h1>Divyanshu Rajwar</h1>
+            <p>Founder,Clean Energy</p>
+            <div class="share_div">
+                <div onclick="openModal()" class="share_btn">
+                    <i class="ri-share-forward-line"></i>
+                    Share My Profile
+                </div>
+                <div  class="follow_btn">Follow Me</div>
+            </div>
+        </div>
+        <div id="ball_2" class="ball"></div>
+        <!-- Share Modal -->
+        <div class="wrapper">
+            <div class="headder">
+                <h1>Share My Profile</h1>
+                <div onclick="closeModal()" class="close_icon">
+                    <i   class="ri-close-fill"></i>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="content">
+                <span>Share this via</span>
+                <div class="social_wrapper">
+                    <a href="https://www.instagram.com/divyanshurajwar?utm_source=qr&igsh=MTd2bjFlbnRxY3BxOQ==" target="_blank"> 
+                        <div id="ig" class="insta social">
+                            <i class="ri-instagram-line"></i>    
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/RajwarDivu" target="_blank">
+                    <div id="twi" class="twitter social">
+                        <i class="ri-twitter-x-fill"></i>
+                    </div>
+                    </a>
+                    <a href="https://t.me/DivyanshuRajwar" target="_blank">
+                    <div id="tele" class="telegram social">
+                        <i class="ri-telegram-fill"></i>
+                    </div>
+                    </a>
+                    <a href="https://github.com/DivyanshuRajwar?tab=repositories" target="_blank">
+                    <div id="repo" class="git social">
+                       <i class="ri-github-fill"></i>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div onclick="closeModal()" class="overlay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
