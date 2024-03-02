@@ -77,6 +77,13 @@ body,html{
     border-radius: 3px;
     padding: 4px 8px;
 }
+.follow_btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.follow_btn a:hover{
+color: #000;
+}
 .follow_btn:hover{
     cursor: pointer;
     color: #000;
